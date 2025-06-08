@@ -984,6 +984,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .max-sm\:justify-center {
+    @media (width < 40rem) {
+      justify-content: center;
+    }
+  }
   .max-sm\:gap-\[50px\] {
     @media (width < 40rem) {
       gap: 50px;
@@ -994,14 +999,24 @@
       text-align: center;
     }
   }
-  .max-sm\:text-\[50px\] {
+  .max-sm\:text-\[55px\] {
     @media (width < 40rem) {
-      font-size: 50px;
+      font-size: 55px;
+    }
+  }
+  .max-sm\:text-\[58px\] {
+    @media (width < 40rem) {
+      font-size: 58px;
     }
   }
   .max-sm\:text-\[60px\] {
     @media (width < 40rem) {
       font-size: 60px;
+    }
+  }
+  .max-sm\:text-\[58\] {
+    @media (width < 40rem) {
+      color: 58;
     }
   }
   .sm\:flex {
